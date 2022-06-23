@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="DB.cs" />
     <Compile Include="LoginFARM.cs">
       <SubType>Form</SubType>
@@ -63,6 +64,8 @@
     <Compile Include="MainForm1.Designer.cs">
       <DependentUpon>MainForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainRun.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LoginFARM.resx">
@@ -92,6 +95,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\2businessregistration_signpen_negocio_inscripcio_2358.png" />
+    <Content Include="Img\businessregistration_signpen_negocio_inscripcio_2358.ico" />
+    <Content Include="Img\businessregistration_signpen_negocio_inscripcio_2358.png" />
+    <Content Include="Img\Screenshot_42.ico" />
+    <Content Include="Img\Screenshot_43.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
