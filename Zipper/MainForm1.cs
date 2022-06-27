@@ -27,7 +27,7 @@ namespace Zipper
 
 
 
-       
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -41,24 +41,18 @@ namespace Zipper
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             string readfile = File.ReadAllText(filename);
 
+            Huffman hufman = new Huffman();
 
-            HuffmanTree huffmanTree = new HuffmanTree();
+            hufman.CompressFiles(readfile, "HuffmanCompress.txt");
+
 
             // Build the Huffman tree
-            huffmanTree.Build(readfile);
-            string a = "";
-            // Encode
-            BitArray encoded = huffmanTree.Encode(readfile);
 
-            Console.Write("Encoded: ");
-            foreach (bool bit in encoded)
-            {
-                a += ((bit ? 1 : 0) + "");
-                richTextBox1.Text = a;
-            }
+
+            // Encode
+
 
         }
-
             private void button1_Click(object sender, EventArgs e)
             {
                 richTextBox1.SaveFile(System.Environment.GetFolderPath
@@ -78,19 +72,19 @@ namespace Zipper
             openFileDialog1.InitialDirectory = "c:\\";
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             string readfile = File.ReadAllText(filename);
+            
+           
+            
 
+            Huffman hufman = new Huffman();
 
-
-            HuffmanTree huffmanTree = new HuffmanTree();
+            hufman.DecompressFile (readfile, "decompressCompress.txt");
 
 
 
             // Decode
 
-            BitArray decoded = huffmanTree.ConvertHexToBitArray(readfile);
-
-            string decoded1 = huffmanTree.Decode(decoded);
-            richTextBox1.Text = decoded1;
+           
 
 
 
