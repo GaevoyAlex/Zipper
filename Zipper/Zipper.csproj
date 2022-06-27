@@ -64,7 +64,6 @@
     <Compile Include="MainForm1.Designer.cs">
       <DependentUpon>MainForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainRun.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

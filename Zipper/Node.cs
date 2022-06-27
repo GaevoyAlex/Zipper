@@ -12,7 +12,7 @@ namespace Zipper
             public int Frequency1 { get; set; }
             public Node1 Right1 { get; set; }
             public Node1 Left1 { get; set; }
-
+            
             public List<bool> Traverse(char symbol, List<bool> data)
             {
                 // Leaf

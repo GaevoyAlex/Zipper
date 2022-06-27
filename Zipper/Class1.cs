@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,12 +76,30 @@ namespace Zipper
             return bits;
         }
 
-        public string Decode(BitArray bits)
+        public BitArray ConvertHexToBitArray(string hexData)
         {
+            if (hexData == null)
+                return null; // or do something else, throw, ...
+
+            BitArray ba = new BitArray(4 * hexData.Length);
+            for (int i = 0; i < hexData.Length; i++)
+            {
+                byte b = byte.Parse(hexData[i].ToString(), NumberStyles.HexNumber);
+                for (int j = 0; j < 4; j++)
+                {
+                    ba.Set(i * 4 + j, (b & (1 << (3 - j))) != 0);
+                }
+            }
+            return ba;
+        }
+
+        public string Decode(BitArray ba)
+        {
+
             Node1 current = this.Root1;
             string decoded = "";
 
-            foreach (bool bit in bits)
+            foreach (bool bit in ba)
             {
                 if (bit)
                 {
@@ -117,62 +136,9 @@ namespace Zipper
 
    
     
-        public class Node
-        {
-            public char Symbol { get; set; }
-            public int Frequency { get; set; }
-            public Node Right { get; set; }
-            public Node Left { get; set; }
-
-            public List<bool> Traverse(char symbol, List<bool> data)
-            {
-                // Leaf
-                if (Right == null && Left == null)
-                {
-                    if (symbol.Equals(this.Symbol))
-                    {
-                        return data;
-                    }
-                    else
-                    {
-                        return null;
-                    }
-                }
-                else
-                {
-                    List<bool> left = null;
-                    List<bool> right = null;
-
-                    if (Left != null)
-                    {
-                        List<bool> leftPath = new List<bool>();
-                        leftPath.AddRange(data);
-                        leftPath.Add(false);
-
-                        left = Left.Traverse(symbol, leftPath);
-                    }
-
-                    if (Right != null)
-                    {
-                        List<bool> rightPath = new List<bool>();
-                        rightPath.AddRange(data);
-                        rightPath.Add(true);
-                        right = Right.Traverse(symbol, rightPath);
-                    }
-
-                    if (left != null)
-                    {
-                        return left;
-                    }
-                    else
-                    {
-                        return right;
-                    }
-                }
-            }
-
-    }
-    }
+        
+}
+    
 
             
         

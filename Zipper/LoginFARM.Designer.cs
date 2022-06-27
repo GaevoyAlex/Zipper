@@ -37,7 +37,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -117,14 +116,6 @@
             this.textBox2.TabIndex = 2;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(7, 262);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 3;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -157,14 +148,13 @@
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(113, 262);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(162, 16);
+            this.label5.Size = new System.Drawing.Size(0, 16);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Запишите ответ на задачу.";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button1.Location = new System.Drawing.Point(240, 297);
+            this.button1.Location = new System.Drawing.Point(240, 288);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 23);
             this.button1.TabIndex = 7;
@@ -193,7 +183,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Location = new System.Drawing.Point(12, 297);
+            this.button2.Location = new System.Drawing.Point(7, 259);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(183, 23);
             this.button2.TabIndex = 10;
@@ -205,7 +195,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(412, 346);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.panel3);
@@ -214,7 +203,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
@@ -236,7 +224,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
