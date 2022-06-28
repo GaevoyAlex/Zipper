@@ -19,7 +19,7 @@ namespace Zipper
         {
             if ( storage.ContainsKey( priority ) )
                 storage.Add( priority, new Queue<T>());
-            storage[priority].Enqueue( item );
+            storage[priority].Enqueue(item);
             size++;
         }
         public T Dequeue()

@@ -35,15 +35,15 @@ namespace Zipper
 
             /*Console.WriteLine("Please enter the string:");
             string input = Console.ReadLine();*/
-            openFileDialog1.ShowDialog();
-            string filename = openFileDialog1.FileName;
-            openFileDialog1.InitialDirectory = "c:\\";
-            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            string readfile = File.ReadAllText(filename);
+            //openFileDialog1.ShowDialog();
+            //string filename = openFileDialog1.FileName;
+            //openFileDialog1.InitialDirectory = "c:\\";
+            //openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            //string readfile = File.ReadAllText(filename);
 
             Huffman hufman = new Huffman();
 
-            hufman.CompressFiles(readfile, "HuffmanCompress.txt");
+            hufman.CompressFiles("Новый текстовый документ.txt", "compressCompress.txt");
 
 
             // Build the Huffman tree
@@ -67,18 +67,18 @@ namespace Zipper
 
         private void button5_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
-            string filename = openFileDialog1.FileName;
-            openFileDialog1.InitialDirectory = "c:\\";
-            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-            string readfile = File.ReadAllText(filename);
+            //openFileDialog1.ShowDialog();
+            //string filename = openFileDialog1.FileName;
+            //openFileDialog1.InitialDirectory = "c:\\";
+            //openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            //string readfile = File.ReadAllText(filename);
             
            
             
 
             Huffman hufman = new Huffman();
 
-            hufman.DecompressFile (readfile, "decompressCompress.txt");
+            hufman.DecompressFile ("Новый текстовый документ.txt", "decompressCompress.txt");
 
 
 

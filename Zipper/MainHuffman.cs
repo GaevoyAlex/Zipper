@@ -57,7 +57,10 @@ namespace Zipper
 
         public void ParseHeader(byte[] arch, out int dataLenght, out int startIndex, out int[] frecs)
         {
-            dataLenght = arch[0] | (arch[1] << 8) | (arch[1] << 16) | (arch[1] << 24);
+            dataLenght = arch[0] |
+                (arch[1] << 8) | 
+                (arch[1] << 16) |
+                (arch[1] << 24);
             frecs = new int[256];
             for (int i = 0; i < 256; i++)
                 frecs[i] = arch[4 + i];
