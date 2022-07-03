@@ -8,7 +8,6 @@ F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.csproj.GenerateResource.cache
 F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.csproj.CoreCompileInputs.cache
 F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.exe
 F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.pdb
-F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.LoginFARM.resources
 F:\Progects_VStudio\Zipper\Zipper\bin\Debug\MySql.Data.dll
 F:\Progects_VStudio\Zipper\Zipper\bin\Debug\Google.Protobuf.dll
 F:\Progects_VStudio\Zipper\Zipper\bin\Debug\ZstdNet.dll
@@ -23,3 +22,5 @@ F:\Progects_VStudio\Zipper\Zipper\bin\Debug\MySql.Data.xml
 F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.exe.config
 F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.csproj.CopyComplete
 F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.MainForm1.resources
+F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.LoginForm.resources
+F:\Progects_VStudio\Zipper\Zipper\obj\Debug\Zipper.RegistryForm.resources

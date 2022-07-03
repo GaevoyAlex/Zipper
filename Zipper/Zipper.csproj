@@ -51,11 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.cs" />
-    <Compile Include="LoginFARM.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginFARM.Designer.cs">
-      <DependentUpon>LoginFARM.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm1.cs">
       <SubType>Form</SubType>
@@ -63,14 +63,20 @@
     <Compile Include="MainForm1.Designer.cs">
       <DependentUpon>MainForm1.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainHuffman.cs" />
-    <Compile Include="NodeHuf.cs" />
-    <Compile Include="PriorityQueue.cs" />
+    <Compile Include="RegistryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistryForm.Designer.cs">
+      <DependentUpon>RegistryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\MainHuffman.cs" />
+    <Compile Include="Scripts\NodeHuf.cs" />
+    <Compile Include="Scripts\PriorityQueue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RunHuf.cs" />
-    <EmbeddedResource Include="LoginFARM.resx">
-      <DependentUpon>LoginFARM.cs</DependentUpon>
+    <Compile Include="Scripts\RunHuf.cs" />
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm1.resx">
       <DependentUpon>MainForm1.cs</DependentUpon>
@@ -84,6 +90,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistryForm.resx">
+      <DependentUpon>RegistryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

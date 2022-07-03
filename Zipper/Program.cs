@@ -16,7 +16,7 @@ namespace Zipper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginFARM());
+            Application.Run(new LoginForm());
             System.Diagnostics.Process.GetCurrentProcess().Kill();
         }
     }
